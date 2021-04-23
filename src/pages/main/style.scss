@@ -1,31 +1,139 @@
-main.index-main {
-  padding: 30px 0;
+
+/* Banner */
+
+.banner {
+  background-image: url('../images/fon.jpg'), linear-gradient(180deg, #E0E7ED 16.53%, #DAE2E5 102.51%);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  background: url('../images/fon.jpg'), linear-gradient(180deg, #E0E7ED 16.53%, #DAE2E5 102.51%) no-repeat center bottom cover;
+  /* background-size: cover; */
+  margin-bottom: 80px;
 }
 
-.parallax-card {
-  max-width: 300px;
+.banner .container {
+  padding: 143px 0 286px;
+}
 
-  &__wrapper-img {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 100%;
-  }
-  &__img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: none;
-    height: 100%;
-    min-width: 100.5%;
-  }
-  &__description {
-    background-color: #ff5722;
-    padding: 20px 10px;
-    text-align: center;
-    color: #fff;
-  }
-  &__paragraph {
-    margin: 0;
-  }
+.banner-title {
+  max-width: 80%;
+  font-weight: 900;
+  font-size: 90px;
+  line-height: 1;
+  color: #00559D;
+  margin: 0 0 49px;
+}
+
+.banner-btn {
+  background: #95459A;
+  font-size: 24px;
+  line-height: 29px;
+  max-width: 360px;
+  cursor: pointer;
+}
+.banner-btn:hover {
+  background: #D665DD;
+}
+.banner-btn:active {
+  background: #722A77;
+}
+
+/* about */
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 106px;
+}
+
+.about-title {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1;
+  color: #005DAB;
+  margin: 0 0 46px;
+}
+
+.about-content {
+  width: 35%;
+}
+
+.about-content > p {
+  margin-bottom: 20px;
+}
+
+.about-img {
+  max-width: 580px;
+  position: relative;
+}
+
+.about-img::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  background: #008752;
+  width: 500px;
+  height: 430px;
+  z-index: -1;
+}
+
+/* brands  */
+
+.brands {
+  margin-bottom: 80px;
+}
+
+.brand-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-item {
+  opacity: .5;
+}
+
+.brand-item:hover {
+  opacity: 1;
+}
+
+.brand-item:active {
+  opacity: .2;
+}
+
+/* map */
+
+.map {
+  background: url('/images/map.jpg') no-repeat;
+  background-size: cover;
+}
+.map .container {
+  padding: 40px 0 133px;
+}
+
+.map-info {
+  background: #008752;
+  color: #fff;
+  font-size: 15px;
+  max-width: 380px;
+  padding: 50px 44px;
+}
+
+.map-title {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0 0 17px;
+}
+
+.map-phone {
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 23px;
+  display: block;
+}
+
+.map .button {
+  background: #95459A;
 }
