@@ -1,34 +1,25 @@
 .header {
   padding: 35px 0;
-  -webkit-display: flex;
-      -moz-display: flex;
-          display: flex;
-  -webkit-align-items: center;
-      -moz-align-items: center;
-          align-items: center;
+  display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-}
-
-.header-logo {
-  max-width: 142px;
-}
-
-.header-nav {
-  margin: 0 auto 0 25px;
-}
-
-.header-list {
-  display: flex;
-  align-items: center;
-}
-
-.header-item {
-  margin-right: 15px;
-}
-
-.header-phone {
-  color: #95459A;
-  margin-right: 24px;
+  &__logo {
+    max-width: 142px;
+  }
+  &__nav {
+    margin: 0 auto 0 25px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    margin-right: 15px;
+  }
+  &__phone {
+    color: #95459A;
+    margin-right: 24px;
+  }
 }

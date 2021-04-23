@@ -41,9 +41,17 @@ img {
   margin: 0 auto;
 }
 
+%psevdo {
+  content: '';
+  display: block;
+  position: absolute;
+}
 // Подключение компонентов
 @import "./header/header";
 @import "./footer/footer";
 @import "./button/button";
 @import "./popup/popup";
 @import "./services/service";
+@import "./banner/banner";
+@import "./map/map";
+@import "variables";

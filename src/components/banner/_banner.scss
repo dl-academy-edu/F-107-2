@@ -1,0 +1,34 @@
+
+.banner {
+    background-image: url('../images/fon.jpg'), linear-gradient(180deg, #E0E7ED 16.53%, #DAE2E5 102.51%);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background: url('../images/fon.jpg'), linear-gradient(180deg, #E0E7ED 16.53%, #DAE2E5 102.51%) no-repeat center bottom cover;
+    /* background-size: cover; */
+    margin-bottom: 80px;
+    .container {
+        padding: 143px 0 286px;
+    }
+    &__title {
+        max-width: 80%;
+        font-weight: 900;
+        font-size: 90px;
+        line-height: 1;
+        color: #00559D;
+        margin: 0 0 49px;
+      }
+  }
+  
+  .button {
+      &_background_violet {
+        @include button($background:#95459A);
+        max-width: 360px;
+        cursor: pointer;
+        &:hover {
+            background: #D665DD;
+        }
+        &:active {
+        background: #722A77;
+        }
+      }
+  }

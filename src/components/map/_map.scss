@@ -1,0 +1,30 @@
+
+.map {
+    background: url('../../static/images/map.jpg') no-repeat;
+    background-size: cover;
+    .container {
+      padding: 40px 0 133px;
+    }
+    &__info {
+      background: #008752;
+      color: #fff;
+      font-size: 15px;
+      max-width: 380px;
+      padding: 50px 44px;
+    }
+    &__title {
+      font-weight: 900;
+      font-size: 30px;
+      line-height: 36px;
+      margin: 0 0 17px;
+    }
+    &__phone {
+      font-weight: bold;
+      color: #FFFFFF;
+      margin-bottom: 23px;
+      display: block;
+    }
+    &__button {
+      background: #95459A;
+    }
+  }
