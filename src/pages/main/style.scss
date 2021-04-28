@@ -39,4 +39,13 @@
   }
 }
 
-
+@keyframes across {
+  from, 100% {
+    bottom: 0;
+    left: 0;
+  }
+  50% {
+    bottom: 400px;
+    left: 400px;
+  }
+}

@@ -1,0 +1,106 @@
+@keyframes chat {
+    from {
+        max-height: 0;
+    }
+    to {
+        max-height: 500px;
+    }
+}
+
+@keyframes chat-close {
+    to {
+        max-height: 0;
+    }
+}
+
+.chat {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.35);
+    width: 300px;
+    height: 488px;
+    overflow: hidden;
+    animation: chat-close 3s 7s forwards;
+    max-height: 100%;
+    &__header {
+        background: #F6F6F8;
+        border: 1px solid #D9D9DB;
+        padding: 14px 15px;
+        position: absolute;
+        width: 100%;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #27253F;
+    }
+    &__desc {
+        font-size: 12px;
+        line-height: 14px;
+        color: #6B6A6A;
+    }
+    &__close {
+        position: absolute;
+        top: 24px;
+        right: 15px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        height: 100%;
+    }
+    &__message-container {
+        width: 100%;
+        animation: chat 3s forwards;
+        max-height: 0;
+
+        @for $i from 1 to 8 {
+            &:nth-child(#{$i}) {
+                animation-delay: $i + s;
+            }
+        }
+    }
+    &__message {
+        position: relative;
+        padding: 8px 10px;
+        font-size: 14px;
+        line-height: 17px;
+        width: 75%;
+        border-radius: 10px;
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 10px;
+            height: 10px;
+            bottom: 0;
+        }
+        &_right {
+            background: #2198F4;
+            color: #fff;
+            margin: 0 15px 15px auto;
+            &:after {
+                right: -6px;
+                background: url('../../static/images/blue-tail.png') no-repeat;
+            }
+        }
+        &_left {
+            background: #E4E3E8;
+            color: #000;
+            margin: 0 auto 15px 15px;
+            &:after {
+                left: -6px;
+                background: url('../../static/images/gray-tail.png') no-repeat;
+            }
+        }
+    }
+    &__message-text {
+        margin: 0;
+    }
+}
