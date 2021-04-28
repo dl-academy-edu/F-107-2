@@ -1,9 +1,10 @@
 
 .banner {
-    background-image: url('../images/fon.jpg'), linear-gradient(180deg, #E0E7ED 16.53%, #DAE2E5 102.51%);
+    background: url('../../static/images/fon.jpg'), linear-gradient(180deg, #E0E7ED 16.53%, #DAE2E5 102.51%), no-repeat center bottom cover;
+
+    background-image: url('../../static/images/fon.jpg'), linear-gradient(180deg, #E0E7ED 16.53%, #DAE2E5 102.51%);
     background-repeat: no-repeat;
     background-position: center bottom;
-    background: url('../images/fon.jpg'), linear-gradient(180deg, #E0E7ED 16.53%, #DAE2E5 102.51%) no-repeat center bottom cover;
     /* background-size: cover; */
     margin-bottom: 80px;
     .container {
