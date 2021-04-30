@@ -15,7 +15,7 @@
 
 .chat {
     position: fixed;
-    bottom: 50px;
+    bottom: 70px;
     right: 50px;
     background: #fff;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.35);
@@ -30,6 +30,7 @@
         padding: 14px 15px;
         position: absolute;
         width: 100%;
+        z-index: 2;
     }
     &__title {
         font-weight: bold;
