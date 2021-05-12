@@ -1,12 +1,13 @@
 .header {
-  padding: 35px 0;
+  padding: 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
   &__logo {
-    max-width: 142px;
+    max-width: 72px;
   }
   &__nav {
     margin: 0 auto 0 25px;
@@ -21,5 +22,109 @@
   &__phone {
     color: #95459A;
     margin-right: 24px;
+  }
+}
+
+.header-mobile {
+  position: fixed;
+  background: rgba(149, 69, 154, 0.9);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  // display: none;
+  transform: translateX(-100%);
+  transition: .4s;
+
+  &_open {
+    display: initial;
+    transform: translateX(0);
+  }
+
+  &__btn {
+    border: none;
+    background: transparent;
+  }
+  &__close {
+    position: fixed;
+    top: 20px;
+    right: 41px;
+    border: none;
+    background: transparent;
+  }
+  &__container {
+    background: #EEEEEE;
+    box-shadow: 3px 0px 6px rgba(0, 0, 0, 0.25);
+    height: 100%;
+    width: 80%;
+    padding: 20px 20px 53px;
+
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  &__logo {
+    max-width: 160px;
+  }
+  &__list {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 900;
+  }
+  &__nav {
+    margin: 51px 0 auto;
+  }
+  &__item {
+    margin-bottom: 25px;
+  }
+  &__phone {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 800;
+    text-align: center;
+    color: #95459A;
+  }
+  .button {
+    max-width: 100%;
+  }
+  
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 35px 0;
+    &__logo {
+      max-width: 142px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header {
+    &__logo {
+      max-width: 97px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-mobile {
+    display: none;
+    &__btn {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    justify-content: space-between;
+    &__nav {
+      display: none;
+    }
+    .button {
+      display: none;
+    }
   }
 }

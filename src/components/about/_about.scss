@@ -19,16 +19,8 @@
     &__img {
       max-width: 580px;
       position: relative;
-      &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: -50px;
-        right: -50px;
-        background: #008752;
-        width: 500px;
-        height: 430px;
-        z-index: -1;
+      img {
+        box-shadow: 30px 20px 0 #008752;
       }
     }
   }
