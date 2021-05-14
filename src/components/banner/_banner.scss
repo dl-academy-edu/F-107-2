@@ -8,28 +8,41 @@
     /* background-size: cover; */
     margin-bottom: 80px;
     .container {
-        padding: 143px 0 286px;
+        padding: 55px 15px 376px;
+        @media screen and (min-width: 768px) {
+            padding: 57px 15px 286px;
+        }
+        @media screen and (min-width: 1024px) {
+            padding: 143px 0 286px;
+        }
     }
     &__title {
         max-width: 80%;
         font-weight: 900;
-        font-size: 90px;
+        font-size: 36px;
         line-height: 1;
         color: #00559D;
         margin: 0 0 49px;
-      }
+
+        @media screen and (min-width: 768px) {
+            font-size: 60px;
+        }
+        @media screen and (min-width: 1024px) {
+            font-size: 90px;
+        }
+    }
   }
   
-  .button {
-      &_background_violet {
-        @include button($background:#95459A);
-        max-width: 360px;
-        cursor: pointer;
-        &:hover {
-            background: #D665DD;
-        }
-        &:active {
-        background: #722A77;
-        }
-      }
-  }
+.button {
+    &_background_violet {
+    @include button($background:#95459A);
+    max-width: 360px;
+    cursor: pointer;
+    &:hover {
+        background: #D665DD;
+    }
+    &:active {
+    background: #722A77;
+    }
+}
+}
