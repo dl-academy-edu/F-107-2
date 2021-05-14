@@ -13,7 +13,13 @@
         })
     </div>
     <div class="about__img">
-        <img src="../../static/images/about.jpg" alt="">
+        <picture>
+            <source srcset="../../static/images/about-mobile.jpg?1, ../../static/images/about-mobile@2x.jpg?2 2x" media="(max-width:767px)">
+            <source srcset="../../static/images/about-tablet.jpg?3, ../../static/images/about-tablet@2x.jpg?4 2x" media="(max-width:1023px)">
+            <source srcset="../../static/images/about.jpg?5, ../../static/images/about@2x.jpg?6 2x">
+            <img src="../../static/images/about.jpg?7" alt="">
+        </picture>
+        
     </div>
     
 </section>
